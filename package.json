@@ -12,10 +12,17 @@
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.1",
     "@mui/material": "^6.3.1",
     "@mui/material-nextjs": "^6.3.1",
+    "@mui/styled-engine": "^6.3.1",
     "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.14"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.6",
+    "typescript": "5.7.3"
   }
 }

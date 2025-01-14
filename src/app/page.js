@@ -1,12 +1,20 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+import { Box, Button } from "@mui/material";
+import styled from "styled-components";
+import InputFileUpload from "./components/FileUpload";
+import Table from "./components/Table";
+
+
+const TestBox = styled(Box)`
+
+`;
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main>
-        <h1>OLÁA</h1>
-      </main>
-    </div>
-  );
+    return (
+        <TestBox>
+            <Button variant="contained">HomePage</Button>
+            <InputFileUpload />
+            <Table />
+        </TestBox>
+    );
 }
