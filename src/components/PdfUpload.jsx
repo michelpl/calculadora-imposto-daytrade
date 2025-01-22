@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import {
     Box,
-    Button,
-    Typography,
+    Button
 } from "@mui/material";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import SummaryTable from "./SummaryTable.jsx";
@@ -11,6 +10,7 @@ import { extractTableData } from "../brokerModels/clear.jsx";
 
 const PdfUpload = () => {
     const [pdfData, setPdfData] = useState([]);
+    const [uploadButtonValue, setUploadButtonValue] = useState([]);
 
     useEffect(() => {
         const storedData = JSON.parse(localStorage.getItem("pdfData")) || [];
@@ -59,6 +59,8 @@ const PdfUpload = () => {
         }
 
         setPdfData((prevData) => [...prevData, ...newData]);
+        setUploadButtonValue([]);
+
     };
 
     return (
@@ -67,6 +69,7 @@ const PdfUpload = () => {
                 variant="contained"
                 component="label"
                 startIcon={<CloudUploadIcon />}
+                sx={{margin: "1rem"}}
             >
                 Upload PDFs
                 <input
@@ -75,6 +78,7 @@ const PdfUpload = () => {
                     hidden
                     multiple
                     onChange={handleFileUpload}
+                    value={uploadButtonValue}
                 />
             </Button>
 

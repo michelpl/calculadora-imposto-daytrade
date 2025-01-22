@@ -54,7 +54,7 @@ export default function Page() {
             <Paper style={{ padding: '1rem', margin: '1rem auto', width: '100%', height: "auto" }}>
                 <h1>Calculadora de Imposto Day Trade</h1>
                 <Typography variant="h5" sx={{ color: 'text.secondary' }}>
-                    Para fazer o cálculo, suas notas de negociação / corretagem
+                    Para fazer o cálculo, faça o upload das suas notas de negociação
                 </Typography>
                 <PdfUpload />
             </Paper>

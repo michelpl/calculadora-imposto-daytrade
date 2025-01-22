@@ -1,5 +1,4 @@
 function extractTableData(text) {
-    console.log(text);
     const regex =
         /Data pregão\s+(\d{2}\/\d{2}\/\d{4}).*Valor dos negócios\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+.*Taxas BM&F \(emol\+f\.gar\)\s+(\d+\.*\d*,\d+)\|\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+\|.*Total de custos operacionais\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+\|\s+(\d+\.*\d*,\d+)\s+\|.*(\d+\.*\d*,\d+)\s+.*Total líquido da nota\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\s+(\d+\.*\d*,\d+)\|\s+(\d+\.*\d*,\d+)\s+\| .*(\d*\.*\d+,\d{2})\s\|.*\s+(\d*\.*\d+,\d{2})\s/g;
     
